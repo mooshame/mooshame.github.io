@@ -9201,7 +9201,7 @@ textarea.form-control {
 }
 
 .page-header .filter::after {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   content: "";
   display: block;
   height: 100%;
@@ -9260,7 +9260,14 @@ textarea.form-control {
 
 video {
   position: absolute;
-  width: 102%;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 @media all and (-ms-high-contrast: none),
@@ -16016,6 +16023,13 @@ body.Moo_Mobile .icons-nucleo i {
   }
 }
 
+/* MooSpace_Video */
+/* .video-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
 
 /* all icon font classes list here */
 
