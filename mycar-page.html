@@ -35,11 +35,13 @@
   <link href="../assets/css/paper-kit.css?v=2.3.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
+  <!-- ICON -->
+  <script src="https://kit.fontawesome.com/9614527587.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="landing-page sidebar-collapse">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg nav-down navbar-absolute navbar-transparent">
+  <nav class="navbar navbar-expand-lg nav-down navbar-absolute navbar-transparent" color-on-scroll="850">
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="index.html" rel="tooltip" title="oi!" data-placement="bottom">
@@ -51,147 +53,44 @@
           <span class="navbar-toggler-bar bar3"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse" data-nav-image="../assets/img/blurred-image-1.jpg" data-color="orange">
+      <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Multilevel Dropdown
-            </a>
-            <ul class="dropdown-menu dropdown-danger" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item dropdown-toggle" href="#">Submenu</a>
-              <ul class="dropdown-menu">
-                <a class="dropdown-item" href="#">Submenu action</a>
-                <a class="dropdown-item" href="#">Submenu action</a>
-                <a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
-                <ul class="dropdown-menu dropdown-danger">
-                  <a class="dropdown-item" href="#">Subsubmenu action 1</a>
-                  <a class="dropdown-item" href="#">Subsubmenu action 2</a>
-                </ul>
-                <li>
-                  <a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>
-                  <ul class="dropdown-menu dropdown-danger">
-                    <a class="dropdown-item" href="#">Subsubmenu action 1</a>
-                    <a class="dropdown-item" href="#">Subsubmenu action 2</a>
-                  </ul>
-                </li>
-              </ul>
-            </ul>
+          <li class="nav-item">
+                <a href="profile-page.html" class="nav-link" aria-expanded="false">
+                  About me</a>
           </li>
           <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
-              Components </a>
-            <div class="dropdown-menu dropdown-menu-right dropdown-danger">
-              <a href="../index.html" class="dropdown-item">
-                All Components
-              </a>
-              <a href="./docs/2.0/getting-started/introduction.html" class="dropdown-item">
-                Documentation
-              </a>
-            </div>
-          </li>
-          <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" id="navbarDropdownMenuLink2" data-toggle="dropdown">
-              Sections
+            <a href="#" class="dropdown-toggle nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" title="Gold">
+              Experience
             </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-danger" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="../sections.html#headers">
-                <i class="nc-icon nc-tile-56"></i> Headers
+              <a class="dropdown-item" data-scroll="true" data-id="#headers" href="mycar-page.html">
+                <i class="nc-icon fa-solid fa-car"></i> My Car
               </a>
-              <a class="dropdown-item" href="../sections.html#features">
-                <i class="nc-icon nc-settings"></i> Features
+              <a class="dropdown-item" data-scroll="true" data-id="#features" href="index.html">
+                <i class="nc-icon fa-solid fa-server"></i> Network Topology
               </a>
-              <a class="dropdown-item" href="../sections.html#blogs">
-                <i class="nc-icon nc-bullet-list-67"></i> Blogs
-              </a>
-              <a class="dropdown-item" href="../sections.html#teams">
-                <i class="nc-icon nc-single-02"></i> Teams
-              </a>
-              <a class="dropdown-item" href="../sections.html#projects">
-                <i class="nc-icon nc-calendar-60"></i> Projects
-              </a>
-              <a class="dropdown-item" href="../sections.html#pricing">
-                <i class="nc-icon nc-money-coins"></i> Pricing
-              </a>
-              <a class="dropdown-item" href="../sections.html#testimonials">
-                <i class="nc-icon nc-badge"></i> Testimonials
-              </a>
-              <a class="dropdown-item" href="../sections.html#contactus">
-                <i class="nc-icon nc-mobile"></i> Contact Us
+              <a class="dropdown-item" data-scroll="true" data-id="#blogs" href="index.html">
+                <i class="nc-icon fa-solid fa-house-signal"></i> Smart Home
               </a>
             </div>
           </li>
           <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" id="navbarDropdownMenuLinks" data-toggle="dropdown">
-              Examples
+            <a href="#" class="dropdown-toggle nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown">
+              Tools
             </a>
-            <div class="dropdown-menu dropdown-menu-right dropdown-danger" aria-labelledby="navbarDropdownMenuLink1">
-              <a class="dropdown-item" href="../examples/about-us.html">
-                <i class="nc-icon nc-bank"></i> About-us
+            <div class="dropdown-menu dropdown-menu-right dropdown-danger" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" data-scroll="true" data-id="#headers" href="index.html">
+                <i class="nc-icon nc-tile-56"></i> Headers
               </a>
-              <a class="dropdown-item" href="../examples/add-product.html">
-                <i class="nc-icon nc-basket"></i> Add Product
+              <a class="dropdown-item" data-scroll="true" data-id="#features" href="index.html">
+                <i class="nc-icon nc-settings"></i> Features
               </a>
-              <a class="dropdown-item" href="../examples/blog-post.html">
-                <i class="nc-icon nc-badge"></i> Blog Post
-              </a>
-              <a class="dropdown-item" href="../examples/blog-posts.html">
-                <i class="nc-icon nc-bullet-list-67"></i> Blog Posts
-              </a>
-              <a class="dropdown-item" href="../examples/contact-us.html">
-                <i class="nc-icon nc-mobile"></i> Contact Us
-              </a>
-              <a class="dropdown-item" href="../examples/discover.html">
-                <i class="nc-icon nc-world-2"></i> Discover
-              </a>
-              <a class="dropdown-item" href="../examples/ecommerce.html">
-                <i class="nc-icon nc-send"></i> Ecommerce
-              </a>
-              <a class="dropdown-item" href="../examples/landing-page.html">
-                <i class="nc-icon nc-spaceship"></i> Landing Page
-              </a>
-              <a class="dropdown-item" href="../examples/login-page.html">
-                <i class="nc-icon nc-lock-circle-open"></i> Login Page
-              </a>
-              <a class="dropdown-item" href="../examples/product-page.html">
-                <i class="nc-icon nc-album-2"></i> Product Page
-              </a>
-              <a class="dropdown-item" href="../examples/profile-page.html">
-                <i class="nc-icon nc-single-02"></i> Profile Page
-              </a>
-              <a class="dropdown-item" href="../examples/register-page.html">
-                <i class="nc-icon nc-bookmark-2"></i> Register Page
-              </a>
-              <a class="dropdown-item" href="../examples/search-with-sidebar.html">
-                <i class="nc-icon nc-zoom-split"></i> Search Page
-              </a>
-              <a class="dropdown-item" href="../examples/settings.html">
-                <i class="nc-icon nc-settings-gear-65"></i> Settings Page
-              </a>
-              <a class="dropdown-item" href="../examples/twitter-redesign.html">
-                <i class="nc-icon nc-tie-bow"></i> Twitter
+              <a class="dropdown-item" data-scroll="true" data-id="#blogs" href="index.html">
+                <i class="nc-icon nc-bullet-list-67"></i> Blogs
               </a>
             </div>
-          </li>
-          <!-- <li class="nav-item">
-					<a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
-						<i class="fab fa-twitter"></i>
-						<p class="hidden-lg-up">Twitter</p>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
-						<i class="fab fa-facebook-square"></i>
-						<p class="hidden-lg-up">Facebook</p>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
-						<i class="fab fa-instagram"></i>
-						<p class="hidden-lg-up">Instagram</p>
-					</a>
-				</li> -->
+				  </li>
         </ul>
       </div>
     </div>
@@ -225,7 +124,7 @@
               <div class="card" data-background="image" style="background-position: calc(50% + 22px) center; background-image: url('./assets/img/MooSpace/S90_01.avif')">
                 <div class="card-body">
                   <h3 class="card-category">Volvo S90 T8 <br> Inspection</h3>
-                  <p class="card-description">Sedan <br> Hybrid <br> Housepower: 422Ps  <br> Torque: 680 N·m <br> 0-100km acceleration: 4.8s <br>Polestar performance Kit,With Öhlins dampers.</p>
+                  <p class="card-description">Sedan <br> Hybrid <br> Horsepower: 422Ps  <br> Torque: 680 N·m <br> 0-100km acceleration: 4.8s <br>Polestar performance Kit,With Öhlins dampers.</p>
                   <div class="card-footer">
                     <a href="#pablo" class="btn btn-link btn-neutral">
                       <i class="fa fa-book" aria-hidden="true"></i> Show more
@@ -238,7 +137,7 @@
               <div class="card" data-background="image" style="background-position: calc(50% - 70px) center; background-image: url('./assets/img/MooSpace/ZEEKR009_01.jpeg')">
                 <div class="card-body">
                   <h3 class="card-category">Zeekr 009 <br> Me</h3>
-                  <p class="card-description">MPV <br> Electric <br> Housepower: 544Ps <br> Torque: 686 N·m <br> 0-100km acceleration: 4.5s <br>Sofaro First Class Airline Seat, Redefining Luxury.</p>
+                  <p class="card-description">MPV <br> Electric <br> Horsepower: 544Ps <br> Torque: 686 N·m <br> 0-100km acceleration: 4.5s <br>Sofaro First Class Airline Seat, Redefining Luxury.</p>
                   <div class="card-footer">
                     <a href="#pablo" class="btn btn-link btn-neutral">
                       <i class="fa fa-book" aria-hidden="true"></i> Show more
@@ -251,7 +150,7 @@
               <div class="card" data-background="image" style="background-size: auto 140%; background-image: url('./assets/img/MooSpace/ModelX_01.avif')">
                 <div class="card-body">
                   <h3 class="card-category">Tesla Model X P90D <br> Signature Red</h3>
-                  <p class="card-description">Coupe-SUV <br> Electric <br> Housepower: 772Ps <br> Torque: 967 N·m <br> 0-100km acceleration: 3.4s <br>FSD Auto-Pilot System, With Falcon Wing Doors.</p>
+                  <p class="card-description">Coupe-SUV <br> Electric <br> Horsepower: 772Ps <br> Torque: 967 N·m <br> 0-100km acceleration: 3.4s <br>FSD Auto-Pilot System, With Falcon Wing Doors.</p>
                   <div class="card-footer">
                     <a href="#pablo" class="btn btn-link btn-neutral">
                       <i class="fa fa-book" aria-hidden="true"></i> Show more
@@ -263,10 +162,10 @@
           </div>
           <div class="row">
             <div class="col-md-4">
-              <div class="card" data-background="image" style="background-position: calc(50% - 90px) center; background-image: url('./assets/img/MooSpace/S80_01.webp')">
+              <div class="card" data-background="image" style="background-position: calc(50% - 0px) center; background-image: url('./assets/img/MooSpace/S80_01.webp')">
                 <div class="card-body">
                   <h3 class="card-category">Volvo S80 T6<br> AWD 2.9</h3>
-                  <p class="card-description">Sedan <br> Fuel <br> Housepower: 272Ps <br> Torque: 380 N·m <br> 0-100km acceleration: 7.2s <br>Sofaro First Class Airline Seat, Redefining Luxury.</p>
+                  <p class="card-description">Sedan <br> Fuel <br> Horsepower: 272Ps <br> Torque: 380 N·m <br> 0-100km acceleration: 7.2s <br>Twin Turbochargers, Equipped with ACC as early as 2004.</p>
                   <div class="card-footer">
                     <a href="#pablo" class="btn btn-link btn-neutral">
                       <i class="fa fa-book" aria-hidden="true"></i> Show more
@@ -278,8 +177,8 @@
             <div class="col-md-4">
               <div class="card" data-background="image" style="background-position: center center; background-image: url('./assets/img/MooSpace/ES8_02.jpg')">
                 <div class="card-body">
-                  <h3 class="card-category">Nio ES8 <br> Founder edition</h3>
-                  <p class="card-description">SUV <br> Electric <br> 653 Housepower <br> Torque: 840 N·m <br> 0-100km acceleration: 4.37s <br>Combine unparalleled performance and ultimate comfort.</p>
+                  <h3 class="card-category">Nio ES8 <br> Founder Edition</h3>
+                  <p class="card-description">SUV <br> Electric <br> Horsepower: 653Ps <br> Torque: 840 N·m <br> 0-100km acceleration: 4.37s <br>Combine unparalleled performance and ultimate comfort.</p>
                   <div class="card-footer">
                     <a href="#pablo" class="btn btn-link btn-neutral">
                       <i class="fa fa-book" aria-hidden="true"></i> Show more
@@ -289,10 +188,10 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card" data-background="image" style="background-size: auto 140%; background-image: url('./assets/img/MooSpace/ModelX_01.avif')">
+              <div class="card" data-background="image" style="background-position: center center; background-image: url('./assets/img/MooSpace/Pajero_01.webp')">
                 <div class="card-body">
-                  <h3 class="card-category">Tesla Model X P90D <br> Signature Red</h3>
-                  <p class="card-description">Coupe-SUV <br> Electric <br> 772 Housepower <br> Torque: 967 N·m <br> 0-100km acceleration: 3.4s <br>FSD Auto-Pilot System, With Falcon Wing Doors.</p>
+                  <h3 class="card-category">Mitsubishi Pajero <br> 3.8L Flagship</h3>
+                  <p class="card-description">Off-road SUV <br> Fuel <br> Horsepower: 243Ps <br> Torque: 327 N·m <br> 0-100km acceleration: 9.3s <br>Super Select 4WD-II System, All-terrain driving capability.</p>
                   <div class="card-footer">
                     <a href="#pablo" class="btn btn-link btn-neutral">
                       <i class="fa fa-book" aria-hidden="true"></i> Show more
@@ -305,114 +204,23 @@
         </div>
       </div>
     </div>
-    <div class="section section-dark text-center landing-section">
-      <div class="container">
-        <h2 class="title">Let's talk about us</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-profile card-plain">
-              <div class="card-avatar">
-                <a href="#avatar">
-                  <img src="../assets/img/faces/clem-onojeghuo-3.jpg" alt="...">
-                </a>
-              </div>
-              <div class="card-body">
-                <a href="#paper-kit">
-                  <div class="author">
-                    <h4 class="card-title">Henry Ford</h4>
-                    <h6 class="card-category text-muted">Product Manager</h6>
-                  </div>
-                </a>
-                <p class="card-description text-center">
-                  Teamwork is so important that it is virtually impossible for you to reach the heights of your capabilities or make the money that you want without becoming very good at it.
-                </p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="#pablo" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#pablo" class="btn btn-link btn-just-icon btn-dribbble"><i class="fa fa-dribbble"></i></a>
-                <a href="#pablo" class="btn btn-link btn-just-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-profile card-plain">
-              <div class="card-avatar">
-                <a href="#avatar">
-                  <img src="../assets/img/faces/joe-gardner-2.jpg" alt="...">
-                </a>
-              </div>
-              <div class="card-body">
-                <a href="#paper-kit">
-                  <div class="author">
-                    <h4 class="card-title">Sophie West</h4>
-                    <h6 class="card-category text-muted">Designer</h6>
-                  </div>
-                </a>
-                <p class="card-description text-center">
-                  A group becomes a team when each member is sure enough of himself and his contribution to praise the skill of the others. No one can whistle a symphony. It takes an orchestra to play it.
-                </p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="#pablo" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#pablo" class="btn btn-link btn-just-icon btn-dribbble"><i class="fa fa-dribbble"></i></a>
-                <a href="#pablo" class="btn btn-link btn-just-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-profile card-plain">
-              <div class="card-avatar">
-                <a href="#avatar">
-                  <img src="../assets/img/faces/erik-lucatero-2.jpg" alt="...">
-                </a>
-              </div>
-              <div class="card-body">
-                <a href="#paper-kit">
-                  <div class="author">
-                    <h4 class="card-title">Robert Orben</h4>
-                    <h6 class="card-category text-muted">Developer</h6>
-                  </div>
-                </a>
-                <p class="card-description text-center">
-                  The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
-                </p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="#pablo" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#pablo" class="btn btn-link btn-just-icon btn-dribbble"><i class="fa fa-dribbble"></i></a>
-                <a href="#pablo" class="btn btn-link btn-just-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
+  </div>
+  <div class="page-header header-video">
+    <div class="filter"></div>
+    <!-- We show the video image placeholder instead of the video for small devices  -->
+    <div class="video-image" style="background-image: url('./assets/img/video-placeholder.png')"></div>
+    <video id="video-source" preload="auto" loop="loop" muted="muted" volume="0">
+      <source src="./assets/video/Polestar1_01.mp4" type="video/mp4"> Video not supported
+    </video>
+    <div class="content-center state-play">
+      <div class="container upper-container text-center">
+        <div class="video-text">
+          <h2>All for</h2>
+          <h1 class="title-uppercase title-no-upper-margin">Driving</h1>
         </div>
-      </div>
-    </div>
-    <div class="section landing-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 ml-auto mr-auto">
-            <h2 class="text-center">Keep in touch?</h2>
-            <form class="contact-form">
-              <div class="row">
-                <div class="col-md-6">
-                  <label>Name</label>
-                  <input class="form-control" placeholder="Name">
-                </div>
-                <div class="col-md-6">
-                  <label>Email</label>
-                  <input class="form-control" placeholder="Email">
-                </div>
-              </div>
-              <label>Message</label>
-              <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
-              <div class="row">
-                <div class="col-md-4 offset-md-4">
-                  <button class="btn btn-danger btn-lg btn-fill">Send Message</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+        <br>
+        <!--  We hide the play button on small devices -->
+        <button type="button" data-video="video-source" data-toggle="video" class="btn btn-lg btn-neutral"><i class="fa fa-pause"></i> Pause Video</button>
       </div>
     </div>
   </div>
@@ -422,13 +230,13 @@
         <nav class="footer-nav">
           <ul>
             <li>
-              <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>
+              <a href="https://space.bilibili.com/36053186" target="_blank">Bilibili</a>
             </li>
             <li>
-              <a href="http://blog.creative-tim.com/" target="_blank">Blog</a>
+              <a href="https://weibo.com/u/2573058201" target="_blank">Weibo</a>
             </li>
             <li>
-              <a href="https://www.creative-tim.com/license" target="_blank">Licenses</a>
+              <a href="https://github.com/Mooshame" target="_blank">Github</a>
             </li>
           </ul>
         </nav>
@@ -437,7 +245,13 @@
             ©
             <script>
               document.write(new Date().getFullYear())
-            </script>, made with <i class="fa fa-heart heart"></i> by Creative Tim
+            </script>, made with
+            <span class="frog-container">
+              <span class="plus-one">+1</span>
+              <i class="fa-sharp fa-solid fa-frog" aria-hidden="true"></i>
+           </span>
+           &nbsp by <i class="fa fa-heart heart"></i>Mooshame
+          </span>
           </span>
         </div>
       </div>
