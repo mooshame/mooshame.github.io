@@ -706,7 +706,7 @@ if ($('body').hasClass('presentation-page')) {
   $(function() {
 
     var $window = $(window),
-      isTouch = Modernizr.touch;
+      isTouch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
 
     if (isTouch) {
       $('.add-animation').addClass('animated');
@@ -747,7 +747,7 @@ if ($('body').hasClass('about-us')) {
   $(function() {
 
     var $window = $(window),
-      isTouch = Modernizr.touch;
+      isTouch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
 
     if (isTouch) {
       $('.add-animation').addClass('animated');

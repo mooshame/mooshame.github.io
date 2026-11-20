@@ -26,15 +26,14 @@
   <title>
     MooSpace
   </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
   <!-- CSS Files -->
-  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../assets/css/paper-kit.css?v=2.3.0" rel="stylesheet" />
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/paper-kit.css?v=2.3.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="../assets/demo/demo.css" rel="stylesheet" />
+  <link href="assets/demo/demo.css" rel="stylesheet" />
   <!-- ICON -->
   <script src="https://kit.fontawesome.com/9614527587.js" crossorigin="anonymous"></script>
 </head>
@@ -47,48 +46,48 @@
         <a class="navbar-brand" href="index.html" rel="tooltip" title="oi!" data-placement="bottom">
           MOOSPACE
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-bar bar1"></span>
           <span class="navbar-toggler-bar bar2"></span>
           <span class="navbar-toggler-bar bar3"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
+      <div class="collapse navbar-collapse" id="navigation" data-color="orange">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
                 <a href="profile-page.html" class="nav-link" aria-expanded="false">
                   About me</a>
           </li>
           <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" title="Gold">
+            <a href="#" class="dropdown-toggle nav-link" id="experienceDropdown" data-toggle="dropdown" title="Gold">
               Experience
             </a>
-            <div class="dropdown-menu dropdown-menu-right dropdown-danger" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-menu dropdown-menu-right dropdown-danger" aria-labelledby="experienceDropdown">
               <a class="dropdown-item" data-scroll="true" data-id="#headers" href="mycar-page.html">
                 <i class="nc-icon fa-solid fa-car"></i> My Car
               </a>
-              <a class="dropdown-item" data-scroll="true" data-id="#features" href="index.html">
-                <i class="nc-icon fa-solid fa-server"></i> Network Topology
-              </a>
-              <a class="dropdown-item" data-scroll="true" data-id="#blogs" href="index.html">
-                <i class="nc-icon fa-solid fa-house-signal"></i> Smart Home
-              </a>
+              <span class="dropdown-item disabled" aria-disabled="true">
+                <i class="nc-icon fa-solid fa-server"></i> Network Topology (Coming soon)
+              </span>
+              <span class="dropdown-item disabled" aria-disabled="true">
+                <i class="nc-icon fa-solid fa-house-signal"></i> Smart Home (Coming soon)
+              </span>
             </div>
           </li>
           <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown">
+            <a href="#" class="dropdown-toggle nav-link" id="toolsDropdown" data-toggle="dropdown">
               Tools
             </a>
-            <div class="dropdown-menu dropdown-menu-right dropdown-danger" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" data-scroll="true" data-id="#headers" href="index.html">
+            <div class="dropdown-menu dropdown-menu-right dropdown-danger" aria-labelledby="toolsDropdown">
+              <span class="dropdown-item disabled" aria-disabled="true">
                 <i class="nc-icon nc-tile-56"></i> Headers
-              </a>
-              <a class="dropdown-item" data-scroll="true" data-id="#features" href="index.html">
+              </span>
+              <span class="dropdown-item disabled" aria-disabled="true">
                 <i class="nc-icon nc-settings"></i> Features
-              </a>
-              <a class="dropdown-item" data-scroll="true" data-id="#blogs" href="index.html">
+              </span>
+              <span class="dropdown-item disabled" aria-disabled="true">
                 <i class="nc-icon nc-bullet-list-67"></i> Blogs
-              </a>
+              </span>
             </div>
 				  </li>
         </ul>
@@ -96,7 +95,7 @@
     </div>
   </nav>
   <!-- End Navbar -->
-  <div class="page-header" data-parallax="true" style="background-image: url('../assets/img/MooSpace/Polestar1_01.jpg');">
+  <div class="page-header" data-parallax="true" style="background-image: url('assets/img/MooSpace/Polestar1_01.jpg');">
     <div class="filter"></div>
     <div class="content-center">
       <div class="container">
@@ -126,9 +125,9 @@
                   <h3 class="card-category">Volvo S90 T8 <br> Polestar Engineered</h3>
                   <p class="card-description">Sedan <br> Hybrid <br> Horsepower: 422Ps  <br> Torque: 680 N·m <br> 0-100km acceleration: 4.8s <br>Polestar performance Kit,With Öhlins dampers and Brembo brakes</p>
                   <div class="card-footer">
-                    <a href="#pablo" class="btn btn-link btn-neutral">
-                      <i class="fa fa-book" aria-hidden="true"></i> Show more
-                    </a>
+                    <span class="btn btn-link btn-neutral disabled" aria-disabled="true">
+                      <i class="fa fa-book" aria-hidden="true"></i> Coming soon
+                    </span>
                   </div>
                 </div>
               </div>
@@ -139,9 +138,9 @@
                   <h3 class="card-category">Zeekr 009 <br> Me</h3>
                   <p class="card-description">MPV <br> Electric <br> Horsepower: 544Ps <br> Torque: 686 N·m <br> 0-100km acceleration: 4.5s <br>Sofaro First Class Airline Seat, Redefining Luxury.</p>
                   <div class="card-footer">
-                    <a href="#pablo" class="btn btn-link btn-neutral">
-                      <i class="fa fa-book" aria-hidden="true"></i> Show more
-                    </a>
+                    <span class="btn btn-link btn-neutral disabled" aria-disabled="true">
+                      <i class="fa fa-book" aria-hidden="true"></i> Coming soon
+                    </span>
                   </div>
                 </div>
               </div>
@@ -152,9 +151,9 @@
                   <h3 class="card-category">Tesla Model X P90D <br> Signature Red</h3>
                   <p class="card-description">Coupe-SUV <br> Electric <br> Horsepower: 772Ps <br> Torque: 967 N·m <br> 0-100km acceleration: 3.4s <br>FSD Auto-Pilot System, With Falcon Wing Doors.</p>
                   <div class="card-footer">
-                    <a href="#pablo" class="btn btn-link btn-neutral">
-                      <i class="fa fa-book" aria-hidden="true"></i> Show more
-                    </a>
+                    <span class="btn btn-link btn-neutral disabled" aria-disabled="true">
+                      <i class="fa fa-book" aria-hidden="true"></i> Coming soon
+                    </span>
                   </div>
                 </div>
               </div>
@@ -167,9 +166,9 @@
                   <h3 class="card-category">Volvo S80 T6<br> AWD 2.9</h3>
                   <p class="card-description">Sedan <br> Fuel <br> Horsepower: 272Ps <br> Torque: 380 N·m <br> 0-100km acceleration: 7.2s <br>Twin Turbochargers, Equipped with ACC as early as 2004.</p>
                   <div class="card-footer">
-                    <a href="#pablo" class="btn btn-link btn-neutral">
-                      <i class="fa fa-book" aria-hidden="true"></i> Show more
-                    </a>
+                    <span class="btn btn-link btn-neutral disabled" aria-disabled="true">
+                      <i class="fa fa-book" aria-hidden="true"></i> Coming soon
+                    </span>
                   </div>
                 </div>
               </div>
@@ -180,9 +179,9 @@
                   <h3 class="card-category">Nio ES8 <br> Founder Edition</h3>
                   <p class="card-description">SUV <br> Electric <br> Horsepower: 653Ps <br> Torque: 840 N·m <br> 0-100km acceleration: 4.37s <br>Combine unparalleled performance and ultimate comfort.</p>
                   <div class="card-footer">
-                    <a href="#pablo" class="btn btn-link btn-neutral">
-                      <i class="fa fa-book" aria-hidden="true"></i> Show more
-                    </a>
+                    <span class="btn btn-link btn-neutral disabled" aria-disabled="true">
+                      <i class="fa fa-book" aria-hidden="true"></i> Coming soon
+                    </span>
                   </div>
                 </div>
               </div>
@@ -193,9 +192,9 @@
                   <h3 class="card-category">Mitsubishi Pajero <br> 3.8L Flagship</h3>
                   <p class="card-description">Off-road SUV <br> Fuel <br> Horsepower: 243Ps <br> Torque: 327 N·m <br> 0-100km acceleration: 9.3s <br>Super Select 4WD-II System, All-terrain driving capability.</p>
                   <div class="card-footer">
-                    <a href="#pablo" class="btn btn-link btn-neutral">
-                      <i class="fa fa-book" aria-hidden="true"></i> Show more
-                    </a>
+                    <span class="btn btn-link btn-neutral disabled" aria-disabled="true">
+                      <i class="fa fa-book" aria-hidden="true"></i> Coming soon
+                    </span>
                   </div>
                 </div>
               </div>
@@ -208,9 +207,9 @@
   <div class="page-header header-video">
     <div class="filter"></div>
     <!-- We show the video image placeholder instead of the video for small devices  -->
-    <div class="video-image" style="background-image: url('./assets/img/video-placeholder.png')"></div>
-    <video id="video-source" preload="auto" loop="loop" muted="muted" volume="0">
-      <source src="./assets/video/Polestar1_01.mp4" type="video/mp4"> Video not supported
+    <div class="video-image" style="background-image: url('assets/img/MooSpace/Polestar1_01.jpg')"></div>
+    <video id="video-source" preload="none" poster="assets/img/MooSpace/Polestar1_01.jpg" loop muted playsinline>
+      <source src="assets/video/Polestar1_01.mp4" type="video/mp4"> Video not supported
     </video>
     <div class="content-center state-play">
       <div class="container upper-container text-center">
@@ -230,13 +229,13 @@
         <nav class="footer-nav">
           <ul>
             <li>
-              <a href="https://space.bilibili.com/36053186" target="_blank">Bilibili</a>
+              <a href="https://space.bilibili.com/36053186" target="_blank" rel="noopener noreferrer">Bilibili</a>
             </li>
             <li>
-              <a href="https://weibo.com/u/2573058201" target="_blank">Weibo</a>
+              <a href="https://weibo.com/u/2573058201" target="_blank" rel="noopener noreferrer">Weibo</a>
             </li>
             <li>
-              <a href="https://github.com/Mooshame" target="_blank">Github</a>
+              <a href="https://github.com/Mooshame" target="_blank" rel="noopener noreferrer">Github</a>
             </li>
           </ul>
         </nav>
@@ -250,42 +249,18 @@
               <span class="plus-one">+1</span>
               <i class="fa-sharp fa-solid fa-frog" aria-hidden="true"></i>
            </span>
-           &nbsp by <i class="fa fa-heart heart"></i>Mooshame
-          </span>
+           &nbsp;by <i class="fa fa-heart heart"></i> Mooshame
           </span>
         </div>
       </div>
     </div>
   </footer>
   <!--   Core JS Files   -->
-  <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-  <script src="../assets/js/plugins/bootstrap-switch.js"></script>
-  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-  <script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-  <script src="../assets/js/plugins/moment.min.js"></script>
-  <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
-  <script src="../assets/js/plugins/bootstrap-tagsinput.js"></script>
-  <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
-  <script src="../assets/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
-  <!--	Plugin for Datetimepicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
-  <script src="../assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
-  <!--  Vertical nav - dots -->
-  <!--  Photoswipe files -->
-  <script src="../assets/js/plugins/photo_swipe/photoswipe.min.js"></script>
-  <script src="../assets/js/plugins/photo_swipe/photoswipe-ui-default.min.js"></script>
-  <script src="../assets/js/plugins/photo_swipe/init-gallery.js"></script>
-  <!--  for Jasny fileupload -->
-  <script src="../assets/js/plugins/jasny-bootstrap.min.js"></script>
+  <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
   <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
-  <script src="../assets/js/paper-kit.js?v=2.3.0" type="text/javascript"></script>
-  <!--  Google Maps Plugin    -->
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-  <!--  Plugin for presentation page - isometric cards  -->
-  <script src="../assets/js/plugins/presentation-page/main.js"></script>
+  <script src="assets/js/paper-kit.js?v=2.3.0" type="text/javascript"></script>
 </body>
 
 </html>
